@@ -5,11 +5,18 @@
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
+    width: 95%;
+    max-width: 1080px;
+    margin: 0px auto;
     flex: 1;
-    border: 1px solid magenta;
+}
+
+.headerContainer {
+    min-width: 100%;
 }
 
 .bodyContainer {
     display: flex;
     flex: 1;
+    min-width: 100%;
 }

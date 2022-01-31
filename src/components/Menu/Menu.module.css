@@ -8,4 +8,5 @@
     border: 1px solid gold;
     list-style: none;
     padding-left: 0;
+    min-width: 100%;
 }

@@ -14,12 +14,11 @@ const MenuBar = ({
 }: Props) => {
     return (
         <div className={styles.container}>
+            <div className={styles.overlayContainer}><LogoButton /></div>
             <ToggleMenuButton 
                 isNavigating={isNavigating} 
                 toggleNavigation={toggleNavigation}
             />
-            <LogoButton />
-            <SignInButton />
         </div>
     )
 }

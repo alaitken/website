@@ -7,9 +7,15 @@ const useApp = () => {
         setIsNavigating(prev => !prev)
     }
 
+    const closeNavigation = () => {
+        setIsNavigating(false)
+    }
+    
+
     return {
         isNavigating,
-        toggleNavigation
+        toggleNavigation,
+        closeNavigation
     }
 }
 

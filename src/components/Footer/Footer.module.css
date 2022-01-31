@@ -1,0 +1,23 @@
+
+.footer,
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+
+.footer {
+    flex-direction: column;
+}
+
+.list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+.listItem {
+    padding: 5px;
+}

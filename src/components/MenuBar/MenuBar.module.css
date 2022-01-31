@@ -1,0 +1,22 @@
+
+.container,
+.overlayContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+}
+
+.container {
+    justify-content: space-between;
+    position: relative;
+}
+
+.overlayContainer {
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}

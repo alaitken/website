@@ -16,6 +16,8 @@ const Menu = ({ toggleNavigation }: Props) => {
             <hr className={styles.hr}/>
             <li><Link to='/work-experience' onClick={toggleNavigation}>Work Experience</Link></li>
             <hr className={styles.hr}/>
+            <li><Link to='/resume' onClick={toggleNavigation}>Resume</Link></li>
+            <hr className={styles.hr}/>
             <li><Link to='/contact-me' onClick={toggleNavigation}>Contact Me</Link></li>
         </ul>
     )

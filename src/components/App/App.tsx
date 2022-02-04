@@ -4,6 +4,7 @@ import ContactMe from '../../routes/ContactMe/ContactMe'
 import Education from '../../routes/Education/Education'
 import HomePage from '../../routes/HomePage/HomePage'
 import Projects from '../../routes/Projects/Projects'
+import Resume from '../../routes/Resume/Resume'
 import TechSkills from '../../routes/TechSkills/TechSkills'
 import WorkExperience from '../../routes/WorkExperience/WorkExperience'
 import Footer from '../Footer/Footer'
@@ -35,6 +36,7 @@ const App = () => {
                         <Route path='/work-experience' element={<WorkExperience />}/>
                         <Route path='/achievements' element={<Achievements />}/>
                         <Route path='/tech-skills' element={<TechSkills />}/>
+                        <Route path='/resume' element={<Resume />}/>
                         <Route path='/contact-me' element={<ContactMe />}/>
                     </Routes>
                 }

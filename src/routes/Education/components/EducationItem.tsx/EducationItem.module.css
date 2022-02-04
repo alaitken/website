@@ -1,0 +1,21 @@
+
+.container,
+.infoContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.infoContainer {
+    flex-direction: column;
+    width: 50%;
+}
+
+.img {
+    width: 35%;
+}

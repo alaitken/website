@@ -10,7 +10,10 @@ interface Props {
 const ToggleMenuButton = ({ isNavigating, toggleNavigation }: Props) => {
     return (
         <button className={styles.button} onClick={toggleNavigation}>
-            <FontAwesomeIcon icon={!isNavigating ? faBars : faCaretCircleDown}/>
+            <FontAwesomeIcon 
+                className={styles.icon} 
+                icon={!isNavigating ? faBars : faCaretCircleDown}
+            />
         </button>
     )
 }

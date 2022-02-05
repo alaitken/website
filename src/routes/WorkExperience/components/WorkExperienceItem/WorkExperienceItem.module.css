@@ -8,9 +8,9 @@
 }
 
 .container {
-    justify-content: center;
-    flex-direction: row;
-    max-width: 95%;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
 }
 
 .infoContainer {
@@ -25,7 +25,24 @@
 }
 
 .img {
-    max-width: 650px;
-    width: 50%;
-    flex: 1;
+    max-width: 300px;
+}
+
+.dateContainer,
+.locationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 2rem;
+    color: #f5f5f5;
+    margin-right: 10px;
+}
+
+.title,
+.companyName {
+    text-align: center;
 }

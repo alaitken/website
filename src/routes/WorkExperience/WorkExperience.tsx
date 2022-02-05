@@ -21,7 +21,7 @@ const WorkExperience = () => {
                 location="St. John's, Newfoundland"
                 link='https://www.mdium.ca'
             />
-            <div>
+            <div className={styles.bottomContainer}>
                 <WorkExperienceItem 
                     title='Full Stack Software Developer'
                     logo={ReportMateLogo}

@@ -1,3 +1,6 @@
+import { faCalendarAlt, faGlobe } from '@fortawesome/pro-duotone-svg-icons'
+import { faMapPin } from '@fortawesome/pro-light-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from './WorkExperienceItem.module.css'
 
 interface Props {
@@ -28,10 +31,16 @@ const WorkExperienceItem = ({
                 <h2 className={styles.title}>{title}</h2>
                 <h3 className={styles.companyName}>{companyName}</h3>
                 <div className={styles.innerInfoContainer}>
-                    <p className={styles.date}>{startDate} - {endDate}</p>
-                    <p className={styles.location}>{location}</p>
-                    <button className={styles.button} onClick={() => window.open(link)}>Go to website</button>
+                    <div className={styles.dateContainer}>
+                        <FontAwesomeIcon className={styles.icon} icon={faCalendarAlt}/>
+                        <p className={styles.date}>{startDate} - {endDate}</p>
+                    </div>
+                    <div className={styles.locationContainer}>
+                        <FontAwesomeIcon className={styles.icon} icon={faGlobe}/>
+                        <p className={styles.location}>{location}</p>
+                    </div>
                 </div>
+                <button className={styles.button} onClick={() => window.open(link)}>Go to website</button>
                 <p className={styles.desc}>{desc}</p>
             </div>
         </div>

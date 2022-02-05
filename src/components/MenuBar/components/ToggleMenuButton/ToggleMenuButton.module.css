@@ -1,4 +1,18 @@
 
 .button {
     margin-left: 7.5px;
+    border-radius: 5px;
+    padding: 5px 7.5px;
 }
+
+.icon {
+    font-size: 1.2rem;
+}
+
+
+@media screen and (min-width: 900px) {
+   .button {
+       display: none;
+   }
+}
+

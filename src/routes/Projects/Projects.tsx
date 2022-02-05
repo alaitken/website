@@ -15,6 +15,14 @@ const Projects = () => {
                 link='https://www.amello.ca'
             />
             <ProjectItem 
+                title='Mdium'
+                images={[]}
+                startDate='May. 2021'
+                endDate='Present'
+                desc=''
+                link='https://www.mdium.ca'
+            />
+            <ProjectItem 
                 title='DMV Simulator'
                 images={[]}
                 startDate='Jan. 2020'

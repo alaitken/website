@@ -1,9 +1,11 @@
+import Title from '../../components/Title/Title'
 import styles from './HomePage.module.css'
 
 const HomePage = () => {
     return (
         <div className={styles.container}>
-            <h1>HomePage</h1>\
+            <Title>Home Page</Title>
+            <p>Coming Soon...</p>
         </div>
     )
 }

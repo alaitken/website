@@ -3,13 +3,14 @@ import styles from './WorkExperience.module.css'
 import MdiumLogo from './images/mdium/logo.png'
 import ReportMateLogo from './images/reportmate/logo.png'
 import BellLogo from './images/bell/logo.png'
+import Title from '../../components/Title/Title'
 
 const WorkExperience = () => {
     return (
         <div 
             className={styles.container}
         >
-            <h1>Work Experience</h1>
+            <Title>Work Experience</Title>
             <WorkExperienceItem 
                 title='Co-Founder & Chief Technology Officer'
                 logo={MdiumLogo}

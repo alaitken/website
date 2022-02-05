@@ -12,22 +12,22 @@ const Footer = ({ closeNavigation }: Props) => {
 
     return (
         <footer className={styles.footer}>
-            {year}
+            <p className={styles.year}>austinaitken.com @{year}</p>
             <ul className={styles.list}>
                 <li className={styles.listItem}>
-                    <Link to='/' onClick={closeNavigation}>Overview</Link>
+                    <Link to='/' className='link' onClick={closeNavigation}>Overview</Link>
                 </li>
                 <li className={styles.listItem}>
-                    <Link to='/education' onClick={closeNavigation}>Education</Link>
+                    <Link to='/education' className='link' onClick={closeNavigation}>Education</Link>
                 </li>
                 <li className={styles.listItem}>
-                    <Link to='/projects' onClick={closeNavigation}>Projects</Link>
+                    <Link to='/projects' className='link' onClick={closeNavigation}>Projects</Link>
                 </li>
                 <li className={styles.listItem}>
-                    <Link to='/work-experience' onClick={closeNavigation}>Work Experience</Link>
+                    <Link to='/work-experience' className='link' onClick={closeNavigation}>Work Experience</Link>
                 </li>
                 <li className={styles.listItem}>
-                    <Link to='/contact-me' onClick={closeNavigation}>Contact Me</Link>
+                    <Link to='/contact-me' className='link' onClick={closeNavigation}>Contact Me</Link>
                 </li>
             </ul>
         </footer>

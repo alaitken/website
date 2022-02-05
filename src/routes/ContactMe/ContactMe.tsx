@@ -1,9 +1,11 @@
+import Title from '../../components/Title/Title'
 import styles from './ContactMe.module.css'
 
 const ContactMe = () => {
     return (
         <div className={styles.container}>
-            <h1>Contact Me</h1>
+            <Title>Contact Me</Title>
+            <p>Coming Soon...</p>
         </div>
     )
 }

@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid gold;
     list-style: none;
     padding-left: 0;
     min-width: 100%;
@@ -13,4 +12,6 @@
 
 .hr {
     width: 100%;
+    color: #404040;
+    border-style: solid;
 }

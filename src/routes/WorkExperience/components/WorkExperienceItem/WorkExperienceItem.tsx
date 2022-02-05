@@ -23,15 +23,17 @@ const WorkExperienceItem = ({
 }: Props) => {
     return (
         <div className={styles.container}>
-            <h2 className={styles.title}>{title}</h2>
-            <h3 className={styles.companyName}>{companyName}</h3>
             <img className={styles.img} src={logo}/>
             <div className={styles.infoContainer}>
-                <p className={styles.date}>{startDate} - {endDate}</p>
-                <p className={styles.location}>{location}</p>
+                <h2 className={styles.title}>{title}</h2>
+                <h3 className={styles.companyName}>{companyName}</h3>
+                <div className={styles.innerInfoContainer}>
+                    <p className={styles.date}>{startDate} - {endDate}</p>
+                    <p className={styles.location}>{location}</p>
+                    <button className={styles.button} onClick={() => window.open(link)}>Go to website</button>
+                </div>
+                <p className={styles.desc}>{desc}</p>
             </div>
-            <p className={styles.desc}>{desc}</p>
-            <button className={styles.button} onClick={() => window.open(link)}>Go to website</button>
         </div>
     )
 }

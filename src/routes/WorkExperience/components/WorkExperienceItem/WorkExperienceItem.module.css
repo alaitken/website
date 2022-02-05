@@ -1,6 +1,7 @@
 
 .container,
-.infoContainer {
+.infoContainer,
+.innerInfoContainer {
     width: 100%;
     display: flex;
     align-items: center;
@@ -8,16 +9,23 @@
 
 .container {
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    max-width: 95%;
 }
 
 .infoContainer {
-    width: 100%;
-    justify-content: space-evenly;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.innerInfoContainer {
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .img {
     max-width: 650px;
-    width: 100%;
+    width: 50%;
+    flex: 1;
 }

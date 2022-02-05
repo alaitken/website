@@ -1,10 +1,11 @@
+import Title from '../../components/Title/Title'
 import ProjectItem from './components/ProjectItem/ProjectItem'
 import styles from './Projects.module.css'
 
 const Projects = () => {
     return (
         <div className={styles.container}>
-            <h1>Projects</h1>
+            <Title>Projects</Title>
             <ProjectItem 
                 title='Amello!'
                 images={[]}

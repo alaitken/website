@@ -2,14 +2,12 @@ import EducationItem from './components/EducationItem.tsx/EducationItem'
 import styles from './Education.module.css'
 import MunLogo from './images/mun.jpeg'
 import GonzagaLogo from './images/gonzaga.png'
+import Title from '../../components/Title/Title'
 
 const Education = () => {
     return (
         <div className={styles.container}>
-            <div>
-                <h1 style={{marginBottom: '0px', paddingBottom: '0px'}}>Education</h1>
-                <hr style={{marginTop: '0px', paddingTop: '0px'}}/>
-            </div>
+            <Title>Education</Title>
             <EducationItem 
                 title='Bachelor of Computer Engineering'
                 institution='Memorial University of Newfoundland'

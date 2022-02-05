@@ -1,4 +1,6 @@
-import React from 'react';
+import { faBars, faCaretCircleDown } from '@fortawesome/pro-light-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styles from './ToggleMenuButton.module.css'
 
 interface Props {
     isNavigating: boolean,
@@ -7,7 +9,9 @@ interface Props {
 
 const ToggleMenuButton = ({ isNavigating, toggleNavigation }: Props) => {
     return (
-        <button onClick={toggleNavigation}>{isNavigating ? '=' : '||'}</button>
+        <button className={styles.button} onClick={toggleNavigation}>
+            <FontAwesomeIcon icon={!isNavigating ? faBars : faCaretCircleDown}/>
+        </button>
     )
 }
 

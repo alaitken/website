@@ -2,22 +2,30 @@
 .footer,
 .list {
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-width: 100%;
+    width: 100%;
 }
 
 .footer {
+    justify-content: center;
     flex-direction: column;
+    background-color: #131313;
 }
 
 .list {
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
     padding-left: 0;
+    max-width: 750px;
 }
 
 .listItem {
     padding: 5px;
+}
+
+.year {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }

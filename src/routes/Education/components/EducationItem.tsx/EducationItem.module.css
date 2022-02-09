@@ -14,9 +14,21 @@
 
 .infoContainer {
     flex-direction: column;
+    justify-content: center;
     width: 50%;
 }
 
 .img {
     width: 35%;
+}
+
+/* 
+    || Typography
+*/
+
+.title,
+.location,
+.date {
+    text-align: center;
+    margin: 5px;
 }

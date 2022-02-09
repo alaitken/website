@@ -1,47 +1,52 @@
 import { faCalendarAlt, faGlobe } from '@fortawesome/pro-duotone-svg-icons'
 import { faMapPin } from '@fortawesome/pro-light-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FC } from 'react'
+import ProjectDate from './components/ProjectDate/ProjectDate'
+import ProjectLocation from './components/ProjectLocation/ProjectLocation'
+import ProjectTitle from './components/ProjectTitle/ProjectTitle'
 import styles from './WorkExperienceItem.module.css'
 
 interface Props {
     title: string
     logo: string
-    desc: string
     companyName: string
     startDate: string
     endDate: string
     location: string
     link: string
+    isFocus?: boolean
+    className?: string
+    style?: {}
 }
 
-const WorkExperienceItem = ({
+const WorkExperienceItem: FC<Props> = ({
     title,
     logo,
-    desc,
     companyName,
     startDate,
     endDate,
     location,
-    link
-}: Props) => {
+    link,
+    isFocus = false,
+    className,
+    children,
+    style
+}) => {
     return (
-        <div className={styles.container}>
-            <img className={styles.img} src={logo}/>
+        <div className={`${styles.container} ${className}`} style={style}>
+            <div className={styles.imgContainer}>
+                <img className={`${styles.img} ${isFocus && styles.isFocus}`} src={logo}/>
+            </div>
             <div className={styles.infoContainer}>
-                <h2 className={styles.title}>{title}</h2>
-                <h3 className={styles.companyName}>{companyName}</h3>
+                <ProjectTitle>{companyName}</ProjectTitle>
+                <h3>{title}</h3>
                 <div className={styles.innerInfoContainer}>
-                    <div className={styles.dateContainer}>
-                        <FontAwesomeIcon className={styles.icon} icon={faCalendarAlt}/>
-                        <p className={styles.date}>{startDate} - {endDate}</p>
-                    </div>
-                    <div className={styles.locationContainer}>
-                        <FontAwesomeIcon className={styles.icon} icon={faGlobe}/>
-                        <p className={styles.location}>{location}</p>
-                    </div>
+                    <ProjectDate startDate={startDate} endDate={endDate}/>
+                    <ProjectLocation location={location}/>
                 </div>
+                <p className={styles.desc}>{children}</p>
                 <button className={styles.button} onClick={() => window.open(link)}>Go to website</button>
-                <p className={styles.desc}>{desc}</p>
             </div>
         </div>
     )

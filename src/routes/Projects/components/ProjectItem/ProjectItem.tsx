@@ -1,3 +1,6 @@
+import { FC } from 'react'
+import ProjectDate from '../../../WorkExperience/components/WorkExperienceItem/components/ProjectDate/ProjectDate'
+import ProjectTitle from '../../../WorkExperience/components/WorkExperienceItem/components/ProjectTitle/ProjectTitle'
 import styles from './ProjectItem.module.css'
 
 interface Props {
@@ -5,32 +8,35 @@ interface Props {
     images: string[]
     startDate: string
     endDate: string
-    desc: string
     link: string
+    style?: {}
+    isFocus?: boolean
 }
 
-const ProjectItem = ({
+const ProjectItem: FC<Props> = ({
     title,
     images,
     startDate,
     endDate,
-    desc,
-    link
-}: Props) => {
+    link,
+    children,
+    style,
+    isFocus = false
+}) => {
     return (
-        <div className={styles.container}>
-            <h2 className={styles.title}>{title}</h2>
+        <div className={styles.container} style={style}>
             <div className={styles.imageContainer}>
                 { images.map((image, i) => (
                     <img 
-                        className={styles.image} 
+                        className={`${styles.image} ${isFocus && styles.isFocus}`}
                         key={i}
                         src={image}
                     />))
                 }
             </div>
-            <p className={styles.date}>{startDate} - {endDate}</p>
-            <p className={styles.desc}>{desc}</p>
+            <ProjectTitle>{title}</ProjectTitle>
+            <ProjectDate startDate={startDate} endDate={endDate}/>
+            <p className={styles.desc}>{children}</p>
             <button className={styles.button} onClick={() => window.open(link)}>See project...</button>
         </div>
     )

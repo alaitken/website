@@ -19,9 +19,9 @@ const EducationItem = ({
         <div className={styles.container}>
             <img className={styles.img} src={image}/>
             <div className={styles.infoContainer}>
-                <h2>{title}</h2>
-                <h3>{institution}</h3>
-                <p>{startDate} - {endDate}</p>
+                <h2 className={styles.title}>{title}</h2>
+                <h3 className={styles.location}>{institution}</h3>
+                <p className={styles.date}>{startDate} - {endDate}</p>
             </div>
         </div>
     )

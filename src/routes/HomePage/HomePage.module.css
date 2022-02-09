@@ -6,3 +6,40 @@
     align-items: center;
     min-width: 100%;
 }
+
+.img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 3px solid #f5f5f5;
+}
+
+.intro {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.img {
+    margin: 15px auto;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.li {
+    margin: 5px;
+}
+
+@media screen and (min-width: 769px) {
+    .imgContainer {
+        flex-direction: row;
+    }
+
+    .infoContainer {
+        margin-left: 25px;
+    }
+}

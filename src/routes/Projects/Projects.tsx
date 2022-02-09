@@ -28,7 +28,6 @@ const Projects = () => {
                     startDate='May. 2021'
                     endDate='Present'
                     link='https://www.amello.ca'
-                    style={{maxWidth: '47%'}}
                 >
                     Meet new friends through interest based co-operative activities on Amello!
                 </ProjectItem>
@@ -38,7 +37,6 @@ const Projects = () => {
                     startDate='Jan. 2020'
                     endDate='Apr. 2020'
                     link=''
-                    style={{maxWidth: '47%'}}
                 >
                     Explore the thrilling adventure of renewing your license with wild twists and 
                     turns. Find your own alternative ending through engaging dialogue options and 

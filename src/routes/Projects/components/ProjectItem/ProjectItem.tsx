@@ -24,7 +24,7 @@ const ProjectItem: FC<Props> = ({
     isFocus = false
 }) => {
     return (
-        <div className={styles.container} style={style}>
+        <div className={`${styles.container} ${styles.halfWidth}`} style={style}>
             <div className={styles.imageContainer}>
                 { images.map((image, i) => (
                     <img 

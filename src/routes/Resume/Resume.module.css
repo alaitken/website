@@ -4,8 +4,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 100%;
+}
+
+.a {
+    margin: 25px 0px;
+    text-decoration: none;
+}
+
+.a:hover {
+    text-decoration: underline;
+    color: #a6a6a6;
 }
 
 .image {
-    max-width: 100%;
+    width: 100%;
+    max-width: 650px;
 }

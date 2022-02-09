@@ -37,7 +37,7 @@ const ProjectItem: FC<Props> = ({
             <ProjectTitle>{title}</ProjectTitle>
             <ProjectDate startDate={startDate} endDate={endDate}/>
             <p className={styles.desc}>{children}</p>
-            <button className={styles.button} onClick={() => window.open(link)}>See project...</button>
+            <button disabled={link === ''} className={styles.button} onClick={() => window.open(link)}>See project...</button>
         </div>
     )
 }

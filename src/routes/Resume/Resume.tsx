@@ -6,7 +6,9 @@ const Resume = () => {
     return (
         <div className={styles.container}>
             <Title>Resume</Title>
-            <a href={resume} download>Download</a>
+            <a className={styles.a} href='https://devtrade-public.s3.ca-central-1.amazonaws.com/austin+resume.pdf' download>
+                Download
+            </a>
             <img className={styles.image} src={resume}/>
         </div>
     )

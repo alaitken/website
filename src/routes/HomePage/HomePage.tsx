@@ -4,7 +4,7 @@ import styles from './HomePage.module.css'
 const HomePage = () => {
     return (
         <div className={styles.container}>
-            <Title>Home Page</Title>
+            <Title>Overview</Title>
             <p>Coming Soon...</p>
         </div>
     )

@@ -9,7 +9,7 @@
 }
 
 .bottomContainer {
-    justify-content: center;
+    justify-content: space-between;
 }
 
 @media screen and (min-width: 769px) {

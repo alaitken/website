@@ -65,7 +65,7 @@
 }
 
 .halfWidth {
-    width: 47%;
+    min-width: 100%;
 }
 
 @media screen and (min-width: 1080px) {
@@ -80,6 +80,7 @@
     }
 
     .halfWidth {
-        width: 100%;
+        min-width: 47%;
+        max-width: 47%;
     }
 }

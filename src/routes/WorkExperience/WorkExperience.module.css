@@ -9,15 +9,15 @@
 
 .bottomContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
     width: 100%;
     max-width: 1080px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (min-width: 1080px) {
     .bottomContainer {
-        flex-direction: column;
+        flex-direction: row;
     }
 }

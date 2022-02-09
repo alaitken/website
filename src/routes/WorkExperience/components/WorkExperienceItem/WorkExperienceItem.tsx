@@ -34,7 +34,7 @@ const WorkExperienceItem: FC<Props> = ({
     style
 }) => {
     return (
-        <div className={`${styles.container} ${className} ${styles.halfWidth}`} style={style}>
+        <div className={`${styles.container} ${className} ${!isFocus && styles.halfWidth}`} style={style}>
             <div className={styles.imgContainer}>
                 <img className={`${styles.img} ${isFocus && styles.isFocus}`} src={logo}/>
             </div>

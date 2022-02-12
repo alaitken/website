@@ -35,7 +35,7 @@ const WorkExperience = () => {
                     link='https://www.reportmate.ca'
                     style={{maxWidth: '47%'}}
                 >
-                    I built platform to aide physicians in creating medico-legal reports 
+                    I built a platform to aide physicians in creating medico-legal reports 
                     through computer vision technology to organize, search, and extract 
                     critical information from physical patient records as a sole developer
                 </WorkExperienceItem>

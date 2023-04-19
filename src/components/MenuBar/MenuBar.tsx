@@ -23,7 +23,6 @@ const MenuBar = ({
                 <Link to='/' className='link'>Overview</Link>
                 <Link to='/education' className='link'>Education</Link>
                 <Link to='/projects' className='link'>Projects</Link>
-                <Link to='/work-experience' className='link'>Work Experience</Link>
                 <Link to='/resume' className='link'>Resume</Link>
                 <Link to='/contact-me' className='link'>Contact Me</Link>
             </div>

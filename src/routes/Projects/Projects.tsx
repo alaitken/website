@@ -13,8 +13,8 @@ const Projects = () => {
             <ProjectItem 
                 title='Mdium'
                 images={[MdiumLogo]}
-                startDate='May. 2021'
-                endDate='Present'
+                startDate='Aug. 2020'
+                endDate='Oct. 2021'
                 link='https://www.mdium.ca'
                 isFocus={true}
             >
@@ -26,8 +26,8 @@ const Projects = () => {
                     title='Amello!'
                     images={[AmelloLogoWhite]}
                     startDate='May. 2021'
-                    endDate='Present'
-                    link='https://www.amello.ca'
+                    endDate='Feb. 2022'
+                    link=''
                 >
                     Meet new friends through interest based co-operative activities on Amello!
                 </ProjectItem>

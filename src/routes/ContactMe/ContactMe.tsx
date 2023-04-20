@@ -5,7 +5,7 @@ const ContactMe = () => {
     return (
         <div className={styles.container}>
             <Title>Contact Me</Title>
-            <p>Feel free to email <a href='mailto:alaitken@mun.ca'>alaitken@mun.ca</a></p>
+            <p>Please send enquiries to <a href='mailto:alaitken@mun.ca'>austin@teckie.io</a></p>
         </div>
     )
 }

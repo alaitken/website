@@ -12,7 +12,7 @@ const HomePage = () => {
             <div className={styles.imgContainer}>
                 <img className={styles.img} src={PP}/>
                 <div className={styles.infoContainer}>
-                    <p style={{marginTop: '0px', textDecoration: 'underline', fontSize: '1.4rem'}}>Key Achievements:</p>
+                    <p style={{margin: '0px auto', textDecoration: 'underline', fontSize: '1.4rem'}}>Key Achievements</p>
                     <ul>
                         <li className={styles.li}>Won a Hackathon with a Wildlife Trafficking Alert</li>
                         <li className={styles.li}>Co-Founded a Start-up that reached Tens of Thousands of Users.</li>
